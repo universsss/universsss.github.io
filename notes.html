@@ -1,8 +1,113 @@
-<dl>
-  2023.5.18 星期四
-  <dt>
-    <ul>
-      <li>周六web课正常上</li>
-    </ul>
-   </dt>
-</dl>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计科20-2通知</title>
+  <script>
+    function toggleText() {
+      var text = document.querySelector('.text');
+      var textMore = document.querySelector('.text-more a');
+      if (text.getAttribute('data-more') === 'true') {
+        text.style.maxHeight = text.scrollHeight + 'px';
+        text.setAttribute('data-more', 'false');
+        textMore.innerText = "收起";
+      } else {
+        text.style.maxHeight = '50px';
+        text.setAttribute('data-more', 'true');
+        textMore.innerText = "详情";
+      }
+    }
+  </script>
+  <style>
+    /* li div{
+      display: none;
+    }
+    li:hover div{
+      display: block;
+    }
+    .content{
+      display: none;
+    }
+    #details:checked ~.content{
+      display: block;
+    } */
+    p{
+      color: rgb(127, 8, 8);
+      font-family: 楷书;
+      font-size: 20px;
+      height: 0px;
+    }
+    .header{
+      height: 30px;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      text-align: center;
+      font-family: 隶书;
+      font-size: 20px;
+      color: gold;
+      background: #000;
+    }
+    .content{
+      position: relative;
+      top: 30px;
+      background: rgb(41, 220, 41);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">计科20-2通知</div>
+  <div class="content">
+    <dl>
+
+      2023.5.20 星期四
+      <dt>
+        <ul>
+          <li>
+            
+              <p>本周六web课不上</p><br>
+              老师有事，改到周末
+            
+          </li>
+          <li>
+            <p>本周日上午上web课</p><br>
+            地点：致向楼402 <br> 时间不变 <br> 给复习资料
+            
+          </li>
+          <li>
+            <p>本周日下午上web实验课</p> <br> 地点待定
+            
+          </li>
+          <li>
+            <p>下两周（15、16周）进行网络系统课设</p><br>地点：逸夫楼<br>时间：每周周一~周五
+            
+          </li>
+
+          <li>
+            <p>17、18周进行硬件系统课设</p><br>地点：逸夫楼<br>时间：每周周一~周五
+            
+          </li>
+        </ul>
+       </dt>
+  
+      2023.5.18 星期四
+      <dt>
+        <ul>
+          <li>
+            周六web课正常上
+            
+          </li>
+        </ul>
+       </dt>
+       
+    </dl>
+    
+    
+  </div>
+
+</body>
+</html>
+
