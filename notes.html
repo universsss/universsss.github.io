@@ -5,7 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>计科20-2通知</title>
-  
+  <script>
+    function showhistory(){
+      var obj = document.getElementById("con");
+      if(obj.style.cssText == "display: block;"){
+        obj.style.cssText = "display:none;"
+      }else{
+
+        obj.style.cssText = "display:block;"
+      }
+      
+    }
+  </script>
   <style>
     /* li div{
       display: none;
@@ -38,6 +49,7 @@
       background: #000;
     }
     .content{
+      
       position: relative;
       top: 40px;
       background: rgb(41, 220, 41);
@@ -46,10 +58,13 @@
       position: relative;
       top: 30px;
     }
+    #con{
+      display: none;
+    }
   </style>
 </head>
 <body>
-  <div class="header">计科20-2通知</div>
+  <div class="header" >计科20-2通知<a href="#" onclick="showhistory()">历史通知</a></div>
     
     <div id="table">
       <table border="1" align="center" cellspacing="0" cellpadding="9px" style="text-align: center;">
@@ -66,7 +81,7 @@
       </table>
     </div>
     
-    <div class="content">
+    <div class="content" id="con">
 
       
       <dl>
