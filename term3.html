@@ -11,7 +11,7 @@
         }
     </style>
 </head>
-<body style="background-color: black;color: gold;">
+<body style="background-color: black;color: gold;font-size: 1vw;">
     
         
     <form oninput="
@@ -30,10 +30,10 @@
             parseInt(l.value)*2+
             parseInt(m.value)*2+
             parseInt(n.value)*2+
-            parseInt(o.value)*2)/34 ;x1.value=parseFloat(x.value).toFixed(3)" style="position: absolute;left: 30vw;height: 40vw;">
+            parseInt(o.value)*2)/34 ;x1.value=parseFloat(x.value).toFixed(3)" >
             <fieldset>
                 <legend>计科20-2大三（2022-2023学年）加权平均成绩计算</legend>
-                <table >
+                <table align="center">
                     <tr>
                         <td>编译原理B[2.5]</td>
                         <td><input type="number" id="a"></td>
@@ -106,8 +106,17 @@
                 </table>
         
         </fieldset>
+        <table align="center">
+            <tr><td><input type="reset" value="一键清除" ></td></tr>
+        </table>
+        
     </form>
-    
+    <div style="position: absolute;bottom: 0;width: 100vw;" >
+        <table align="center">
+        
+            <tr><td><footer>2023.7.5 &copy; 联系邮箱:wangfeiyu0224@qq.com</footer></td></tr>
+        </table>
 
+    </div>
 </body>
 </html>
