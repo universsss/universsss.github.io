@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加权平均成绩计算</title>
+    <style>
+        input{
+            border-radius: 20vw;
+        }
+    </style>
+</head>
+<body style="background-color: black;color: gold;font-size: 1vw;">
+    
+        
+    <form oninput="
+            x.value=
+            (parseInt(a.value)*3+
+            parseInt(b.value)*2.5+
+            parseInt(c.value)*2+
+            parseInt(d.value)*2.5+
+            parseInt(e.value)*1+
+            parseInt(f.value)*2+
+            parseInt(g.value)*4+
+            parseInt(h.value)*4+
+            parseInt(i.value)*2+
+            parseInt(j.value)*1+
+            parseInt(k.value)*3.5+
+            parseInt(l.value)*0.5+
+            parseInt(m.value)*2+
+            parseInt(n.value)*2+
+            parseInt(o.value)*3+
+            parseInt(p.value)*3+
+            parseInt(q.value)*2.5+
+            parseInt(r.value)*3.5+
+            parseInt(s.value)*2.5
+            )/(3+2.5+2+2.5+1+2+4+4+2+1+3.5+0.5+2+2+3+3+2.5+3.5+2.5) ;x1.value=parseFloat(x.value).toFixed(3)" >
+            <fieldset>
+                <legend>市营大三（2022-2023学年）加权平均成绩计算</legend>
+                <table align="center">
+                    <tr>
+                        <td>计量经济学B[3]</td>
+                        <td><input type="number" id="a"></td>
+                    </tr>
+                    <tr>
+                        <td>证券投资学A[2.5]</td>
+                        <td><input type="number" id="b"></td>
+                    </tr>
+                    <tr>
+                        <td>成本会计[2]</td>
+                        <td><input type="number" id="c"></td>
+                    </tr>
+                    <tr>
+                        <td>税法与税务会计[2.5]</td>
+                        <td><input type="number" id="d"></td>
+                    </tr>
+                    <tr>
+                        <td>思想政治理论综合实践课(二)[1]</td>
+                        <td><input type="number" id="e"></td>
+                    </tr>
+                    <tr>
+                        <td>毛泽东思想和中国特色社会主义理论体系概论(二)[2]</td>
+                        <td><input type="number" id="f"></td>
+                    </tr>
+                    <tr>
+                        <td>宏微观经济学B[4]</td>
+                        <td><input type="number" id="g"></td>
+                    </tr>
+                    <tr>
+                        <td>财务会计课程设计[4]</td>
+                        <td><input type="number" id="h"></td>
+                    </tr>
+                    <tr>
+                        <td>专业技能拓展训练1[2]</td>
+                        <td><input type="number" id="i"></td>
+                    </tr>
+                    <tr>
+                        <td>证券投资课程设计[1]</td>
+                        <td><input type="number" id="j"></td>
+                    </tr>
+                    <tr>
+                        <td>财务管理学[3.5]</td>
+                        <td><input type="number" id="k"></td>
+                    </tr>
+                    <tr>
+                        <td>就业指导一[0.5]</td>
+                        <td><input type="number" id="l"></td>
+                    </tr>
+                    <tr>
+                        <td>会计信息系统课程设计[2]</td>
+                        <td><input type="number" id="m"></td>
+                    </tr>
+                    <tr>
+                        <td>会计学学年论文[2]</td>
+                        <td><input type="number" id="n"></td>
+                    </tr>
+                    <tr>
+                        <td>企业定制一[3]</td>
+                        <td><input type="number" id="o"></td>
+                    </tr>
+                    <tr>
+                        <td>专业技能拓展训练2[3]</td>
+                        <td><input type="number" id="p"></td>
+                    </tr>
+                    <tr>
+                        <td>管理会计学[2.5]</td>
+                        <td><input type="number" id="q"></td>
+                    </tr>
+                    <tr>
+                        <td>审计学A[3.5]</td>
+                        <td><input type="number" id="r"></td>
+                    </tr>
+                    <tr>
+                        <td>会计信息系统[2.5]</td>
+                        <td><input type="number" id="s"></td>
+                    </tr>
+                    <tr>
+                        <td>加权平均成绩</td>
+                        <td><output name = "x" for="a b c d e f g h i g k l m n o p q r s" id="num1" style="background-color: rgb(6, 15, 15);"></output></td>
+                    </tr>
+                    <tr>
+                        <td>加权平均成绩(保留3位小数)</td>
+                        <td><output name = "x1" for="num1" style="background-color: rgb(4, 10, 4);"></output></td>
+                    </tr>
+                    
+                </table>
+        
+        </fieldset>
+        <table align="center">
+            <tr><td><input type="reset" value="一键清除" ></td></tr>
+        </table>
+        
+    </form>
+    <div style="position: absolute;bottom: 0;width: 100vw;" >
+        <table align="center">
+        
+            <tr><td><footer>2023.7.5 &copy; 联系邮箱:wangfeiyu0224@qq.com</footer></td></tr>
+        </table>
+
+    </div>
+</body>
+</html>
