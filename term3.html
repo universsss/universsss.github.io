@@ -30,7 +30,9 @@
             parseInt(l.value)*2+
             parseInt(m.value)*2+
             parseInt(n.value)*2+
-            parseInt(o.value)*2)/34 ;x1.value=parseFloat(x.value).toFixed(3)" >
+            parseInt(o.value)*2)/34 ;x1.value=parseFloat(x.value).toFixed(3);
+            zonghe.value=(parseFloat(mokuai.value/4)+parseFloat(num1.value));
+            zonghe2.value=parseFloat(zonghe.value).toFixed(3);" >
             <fieldset>
                 <legend>计科20-2大三（2022-2023学年）加权平均成绩计算</legend>
                 <table align="center">
@@ -101,6 +103,19 @@
                     <tr>
                         <td>加权平均成绩(保留3位小数)</td>
                         <td><output name = "x1" for="num1" style="background-color: rgb(4, 10, 4);"></output></td>
+                    </tr>
+
+                    <tr>
+                        <td>模块分</td>
+                        <td><input type="number" id="mokuai"></td>
+                    </tr>
+                    <tr>
+                        <td>综合素质成绩</td>
+                        <td><output name = "zonghe" for="num1 mokuai" id="zonghe" style="background-color: rgb(6, 15, 15);"></output></td>
+                    </tr>
+                    <tr>
+                        <td>综合素质成绩(保留3位小数)</td>
+                        <td><output name = "zonghe2" for="zonghe" style="background-color: rgb(4, 10, 4);"></output></td>
                     </tr>
                     
                 </table>
